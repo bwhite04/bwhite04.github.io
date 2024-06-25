@@ -44,3 +44,15 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 50 ? header.classList.add("active")
     : header.classList.remove("active");
 });
+
+/**
+ * Open new tab on button click
+ */
+
+const donateButtons = document.querySelectorAll(".help-button");
+
+donateButtons.forEach(button => {
+  button.addEventListener("click", function () {
+    window.open('donate.html', '_blank');
+  });
+});
